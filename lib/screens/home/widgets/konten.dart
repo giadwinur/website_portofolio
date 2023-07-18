@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gia_web/screens/home/widgets/coming.dart';
+import 'package:gia_web/screens/home/widgets/education.dart';
 import 'package:gia_web/screens/home/widgets/text_tambahan.dart';
 import 'package:gia_web/screens/home/widgets/utama.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
@@ -78,6 +79,12 @@ class Konten extends StatelessWidget {
               key: const ValueKey(3),
               controller: ctrl,
               index: 3,
+              child: const Education(),
+            ),
+            AutoScrollTag(
+              key: const ValueKey(4),
+              controller: ctrl,
+              index: 4,
               child: const Coming(),
             )
           ],

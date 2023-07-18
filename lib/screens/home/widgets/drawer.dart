@@ -29,13 +29,21 @@ class DrawerHeaderSatu extends StatelessWidget {
                   ctrl.scrollToIndex(2);
                 },
               ),
+              ListTile(
+                leading: const Icon(Icons.school),
+                title: const Text("Education"),
+                onTap: () {
+                  debugPrint('ini print from education');
+                  ctrl.scrollToIndex(3);
+                },
+              ),
               const Divider(),
               ListTile(
                 leading: const Icon(Icons.star),
                 title: const Text("Coming Soon"),
                 onTap: () {
                   debugPrint('ini print from comingsoon');
-                  ctrl.scrollToIndex(3);
+                  ctrl.scrollToIndex(4);
                 },
               ),
             ],
